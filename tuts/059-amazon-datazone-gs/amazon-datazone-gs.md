@@ -4,16 +4,16 @@ This tutorial guides you through setting up and using Amazon DataZone using the 
 
 ## Topics
 
-* [Prerequisites](#prerequisites)
-* [Create an Amazon DataZone domain](#create-an-amazon-datazone-domain)
-* [Create projects](#create-projects)
-* [Create an environment profile and environment](#create-an-environment-profile-and-environment)
-* [Create a data source for AWS Glue](#create-a-data-source-for-aws-glue)
-* [Create and publish custom assets](#create-and-publish-custom-assets)
-* [Search for assets and subscribe](#search-for-assets-and-subscribe)
-* [Clean up resources](#clean-up-resources)
-* [Going to production](#going-to-production)
-* [Next steps](#next-steps)
+- [Prerequisites](#prerequisites)
+- [Create an Amazon DataZone domain](#create-an-amazon-datazone-domain)
+- [Create projects](#create-projects)
+- [Create an environment profile and environment](#create-an-environment-profile-and-environment)
+- [Create a data source for AWS Glue](#create-a-data-source-for-aws-glue)
+- [Create and publish custom assets](#create-and-publish-custom-assets)
+- [Search for assets and subscribe](#search-for-assets-and-subscribe)
+- [Clean up resources](#clean-up-resources)
+- [Going to production](#going-to-production)
+- [Next steps](#next-steps)
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ You can verify that your domain was created successfully and check its status us
 aws datazone get-domain --identifier "dzd_abcd1234"
 ```
 
-Replace `dzd_abcd1234` with your actual domain identifier. The domain status should be "AVAILABLE" before proceeding to the next steps.
+Replace `dzd_abcd1234` with your actual domain identifier. The domain status should be `AVAILABLE` before proceeding to the next steps.
 
 ## Create projects
 
@@ -192,7 +192,7 @@ aws datazone get-environment \
   --project-identifier "dzp_abcd1234"
 ```
 
-Replace `dze_abcd1234` with your environment identifier. The environment status should be "ACTIVE" before proceeding to the next steps.
+Replace `dze_abcd1234` with your environment identifier. The environment status should be `ACTIVE` before proceeding to the next steps.
 
 ## Create a data source for AWS Glue
 
