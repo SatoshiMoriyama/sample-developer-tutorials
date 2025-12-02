@@ -4,13 +4,13 @@ This tutorial guides you through the process of creating, using, and managing an
 
 ## Topics
 
-* [Prerequisites](#prerequisites)
-* [Set up security group for ElastiCache access](#set-up-security-group-for-elasticache-access)
-* [Create a Valkey serverless cache](#create-a-valkey-serverless-cache)
-* [Connect to your cache](#connect-to-your-cache)
-* [Clean up resources](#clean-up-resources)
-* [Going to production](#going-to-production)
-* [Next steps](#next-steps)
+- [Prerequisites](#prerequisites)
+- [Set up security group for ElastiCache access](#set-up-security-group-for-elasticache-access)
+- [Create a Valkey serverless cache](#create-a-valkey-serverless-cache)
+- [Connect to your cache](#connect-to-your-cache)
+- [Clean up resources](#clean-up-resources)
+- [Going to production](#going-to-production)
+- [Next steps](#next-steps)
 
 ## Prerequisites
 
@@ -157,7 +157,7 @@ $ aws elasticache create-serverless-cache \
 }
 ```
 
-This command creates a new serverless cache named "my-valkey-cache" using the Valkey engine and adds a tag for better resource management. The initial status is "CREATING" as ElastiCache provisions the resources.
+This command creates a new serverless cache named "my-valkey-cache" using the Valkey engine and adds a tag for better resource management. The initial status is `CREATING` as ElastiCache provisions the resources.
 
 **Check the status of the cache creation**
 
@@ -168,10 +168,10 @@ $ aws elasticache describe-serverless-caches \
   --serverless-cache-name my-valkey-cache \
   --query "ServerlessCaches[0].Status"
 
-"AVAILABLE"
+`AVAILABLE`
 ```
 
-You can run this command periodically until the status changes from "CREATING" to "AVAILABLE". This typically takes a few minutes.
+You can run this command periodically until the status changes from `CREATING` to `AVAILABLE`. This typically takes a few minutes.
 
 ## Connect to your cache
 
@@ -271,7 +271,7 @@ $ aws elasticache delete-serverless-cache \
 }
 ```
 
-This command initiates the deletion of your cache. The status changes to "DELETING" and ElastiCache begins the cleanup process.
+This command initiates the deletion of your cache. The status changes to `DELETING` and ElastiCache begins the cleanup process.
 
 **Verify cache deletion**
 
@@ -341,8 +341,8 @@ For more information on building production-ready applications with ElastiCache,
 
 Now that you've learned the basics of creating and using an ElastiCache serverless cache, you can explore more advanced features:
 
-* [Learn about ElastiCache serverless architecture](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-overview.html)
-* [Explore different caching strategies](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Strategies.html)
-* [Configure user access control](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.RBAC.html)
-* [Set up CloudWatch monitoring for your cache](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.html)
-* [Learn about high availability with read replicas](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ReadReplicas.html)
+- [Learn about ElastiCache serverless architecture](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-overview.html)
+- [Explore different caching strategies](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Strategies.html)
+- [Configure user access control](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.RBAC.html)
+- [Set up CloudWatch monitoring for your cache](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.html)
+- [Learn about high availability with read replicas](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ReadReplicas.html)

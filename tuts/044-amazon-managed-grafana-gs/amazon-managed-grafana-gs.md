@@ -4,15 +4,15 @@ This tutorial guides you through creating and configuring an Amazon Managed Graf
 
 ## Topics
 
-* [Prerequisites](#prerequisites)
-* [Create an IAM role for your workspace](#create-an-iam-role-for-your-workspace)
-* [Create a Grafana workspace](#create-a-grafana-workspace)
-* [Configure authentication](#configure-authentication)
-* [Configure optional settings](#configure-optional-settings)
-* [Access your Grafana workspace](#access-your-grafana-workspace)
-* [Clean up resources](#clean-up-resources)
-* [Going to production](#going-to-production)
-* [Next steps](#next-steps)
+- [Prerequisites](#prerequisites)
+- [Create an IAM role for your workspace](#create-an-iam-role-for-your-workspace)
+- [Create a Grafana workspace](#create-a-grafana-workspace)
+- [Configure authentication](#configure-authentication)
+- [Configure optional settings](#configure-optional-settings)
+- [Access your Grafana workspace](#access-your-grafana-workspace)
+- [Clean up resources](#clean-up-resources)
+- [Going to production](#going-to-production)
+- [Next steps](#next-steps)
 
 ## Prerequisites
 
@@ -227,7 +227,7 @@ After creating the workspace, check its status to ensure it becomes active:
 aws grafana describe-workspace --workspace-id g-abcd1234
 ```
 
-Replace `g-abcd1234` with your workspace ID. The workspace status will initially be "CREATING". Wait until the status changes to "ACTIVE" before proceeding:
+Replace `g-abcd1234` with your workspace ID. The workspace status will initially be `CREATING`. Wait until the status changes to `ACTIVE` before proceeding:
 
 ```
 {
